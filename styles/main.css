@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 1024px;
+    min-width: 720px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(151, 127, 99);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.712);
+    -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.712);
+    box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.712);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(136, 106, 64);
+}
+
+.header img {
+    width: 15rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.712);
+    -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.712);
+    box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.712);
+}
+
+.portrait {
+    padding: 1rem 3rem;
+}
+
+.name {
+    margin: auto 0;
+    width: 100%;
+}
+
+.name h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.name h3 {
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 21rem 1fr;
+    background-color: rgb(163, 136, 99);
+}
+
+.info {
+    padding: 1rem;
+}
+
+.info h2 {
+    margin: 1.5rem 0;
+}
+
+.about {
+    padding: 1rem;
+    border-left: 2px solid black;
+}
+
+.contacts_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts_list img {
+    width: 1.5rem;
+}
+
+.telegram {
+    display: flex;
+}
+
+.telegram span {
+    margin: .5rem;
+}
+
+.telegram a {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.telegram a:hover {
+    color: antiquewhite;
+    transition: color .5s;
+}
+
+.skills_list {
+    list-style-type: circle;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.skills_list li {
+    margin: 1rem;
+}
+
+.about_me p, li {
+    line-height: 2rem;
+}
+
+.about h3 {
+    margin: 1.5rem 0;
+}
+
+.footer {
+    background-color: rgb(136, 106, 64);
+}
+
+.links_list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.links_list li {
+    display: flex;
+}
+
+.year span {
+    margin: auto;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        max-width: unset;
+        min-width: unset;
+    }
+
+    .name h1 {
+        font-size: 42px;
+    }
+
+    .header img {
+        width: 9rem;
+    }
+
+	.header {
+		flex-wrap: wrap;
+        justify-content: center;
+	}
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(163, 136, 99);
+    }
+
+    .info {
+        padding-bottom: 0px;
+    }
+
+    .about {
+        border-left: none;
+    }
+
+    .skills_list {
+        margin-bottom: 0px;
+    }
+
+    .skills_list li {
+        margin: unset;
+    }
+}
